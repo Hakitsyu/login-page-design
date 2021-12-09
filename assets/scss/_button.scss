@@ -1,0 +1,27 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: map-get($theme-colors, "primary");   
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+
+    & svg {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    &:hover,
+    &:active {
+        cursor: pointer;
+        background-color: #cc66ff;
+    }
+}

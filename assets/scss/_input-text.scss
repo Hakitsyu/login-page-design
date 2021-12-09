@@ -1,0 +1,42 @@
+.input-text {
+    display: flex;
+    align-items: center;    
+    overflow: hidden;
+    padding: 20px 40px;
+    border: 2px solid map-get($theme-colors, "light");
+    border-radius: 10px;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+
+    & svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        color: map-get($theme-colors, "dark");
+        font-size: 14px;
+        color: map-get($theme-colors, "gray");
+    }
+
+    & input {
+        border: none;
+        background-color: transparent;
+        font-family: Poppins;
+        font-size: 16px;
+        padding-left: 25px;
+        user-select: none;
+
+        &:focus {
+            outline: none;
+            border: none;
+        }
+    }
+
+    &:focus-within {
+        border: 2px solid map-get($theme-colors, "primary");
+    }
+}
